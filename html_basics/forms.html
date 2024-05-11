@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- Buttons inside the form will do the form action -->
+    <button>Outside form</button>
+    <!-- A form represents a document section containing interactive controls for submitting information -->
+    <!-- The action specifies WHERE the form data should be sent -->
+    <!-- HTTP method (get, post) -->
+    <!-- When we send data with a GET request all data will show on the url -->
+    <!-- http://127.0.0.1:5500/messi?username=vicente&password=123&messi=on&birthday=2003-08-08 -->
+    <form action="/messi">
+      <div class="username">
+        <label for="username">Enter your username:</label>
+        <input type="text" placeholder="username" id="username" name="username"/>
+      </div>
+      <hr>
+      <!-- type "button" will not do the action form -->
+      <button type="button">Just a button</button>
+      <div class="password">
+        <label for="password">Enter your password:</label>
+        <input type="password" placeholder="password" id="password" name="password"/>
+      </div>
+      <div class="messi">
+        <label for="messi">Do you like Messi?</label>
+        <input type="checkbox" name="messi" id="messi" />
+      </div>
+      <div class="birthday">
+        <label for="birthday">Enter your Birthday:</label>
+        <input type="date" id="birthday" name="birthday"/>
+      </div>
+      <!-- Same behaviour -->
+      <button>Submit</button>
+      <input type="submit" value="click to submit">
+    </form>
+  </body>
+</html>
