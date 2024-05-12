@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reddit Search</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>Forms valid action</h2>
     <form action="https://www.reddit.com/search">
-        <input type="text" name="q">
-        <button>Search on reddit</button>
+      <input type="text" name="q" />
+      <button>Search on reddit</button>
     </form>
     <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <button>Search on google</button>
+      <input type="text" name="q" />
+      <button>Search on google</button>
     </form>
     <form action="https://www.youtube.com/results">
-        <input type="text" name="search_query">
-        <button>Search on  youtube</button>
+      <input type="text" name="search_query" />
+      <button>Search on youtube</button>
     </form>
-</body>
+    <hr>
+    <h2>Form Inpunts V2</h2>
+    <form action="/messi">
+      <div class="messi_or_R">
+        <input type="checkbox" name="messi" , id="messi" checked/>
+        <label for="messi">Do you like messi?</label>
+      </div>
+      <div class="ronaldo_or_M">
+        <input type="checkbox" name="ronaldo", id="ronaldo">
+        <label for="ronaldo">Do you like ronaldo?</label>
+      </div>
+      <h2>Choose the best player of the world</h2>
+      <div class="messi_or_ronaldo">
+        <!-- Same name(atr) to conect bouth radios -->
+        <input type="radio" id="messiradio" name="messi_ronaldo" value="messi">
+        <label for="messiradio">Messi</label>
+        <input type="radio" id="ronaldoradio" name="messi_ronaldo" value="ronaldo">
+        <label for="ronaldoradio">Ronaldo</label>
+      </div>
+      <div class="pets">
+        <label for="pets">Please select your pet</label>
+        <select name="pets" id="pets-select">
+          <option value="" selected>--Select your pet--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="bunny">Bunny</option>
+        </select>
+      </div>
+
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
