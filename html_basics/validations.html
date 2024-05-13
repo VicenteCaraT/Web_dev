@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validations Demo</title>
+  </head>
+  <body>
+    <h2>Validations</h2>
+    <form action="/dummy">
+      <div>
+        <label for="name">Enter First Name</label>
+        <input type="text" name="first" id="name" required />
+      </div>
+      <div>
+        <label for="last">Enter Last Name</label>
+        <input type="text" name="last" id="last" required />
+      </div>
+     
+      <div>
+        <label for="username">Enter username</label>
+        <input type="text" name="username" id="username" required maxlength="15" minlength="5">
+      </div>
+      <div>
+        <label for="password">Enter password</label>
+        <input type="password" name="password" id="password" required maxlength="15" minlength="8">
+      </div>
+      <div>
+        <input type="email" required>
+        <input type="url" required>
+      </div>
+    <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
