@@ -1,0 +1,39 @@
+/* Universal Selector */
+/* * {
+    color: aqua;
+} */
+
+body {
+    background-color: #8d99ae;
+}
+
+button {
+    font-size: 15px;
+    background-color: #83c5be;
+}
+
+h1, h2 {
+    color: #edf2f4;
+}
+
+/*id selector */
+#signup {
+    background-color: #006d77;
+    color: #ef233c;
+}
+
+/*class selector*/
+.tag {
+    background-color: #0096c7;
+    color: #caf0f8;
+    font-size: 15px;
+}
+
+/* section>span>a* Descendant selector */
+.post a {
+    color: #ef233c;
+}
+
+footer a {
+    color: darkorange;
+}
