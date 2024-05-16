@@ -2,7 +2,7 @@
 /* * {
     color: aqua;
 } */
-
+/* Global selectors*/ 
 body {
     background-color: #8d99ae;
 }
@@ -32,6 +32,7 @@ h1, h2 {
 /* section>span>a* Descendant selector */
 .post a {
     color: #ef233c;
+    text-decoration: none;
 }
 
 footer a {
@@ -65,3 +66,21 @@ section[class="post"] {
 a[href*="google"] {
     color: magenta;
 }
+
+/* Pseudo Clases */
+.post button:hover {
+    background-color: #ef233c;
+    color: white;    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: green;
+}
+
+.post:nth-of-type(2) {
+    background-color: #006d77;
+} 
