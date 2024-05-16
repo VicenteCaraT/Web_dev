@@ -84,3 +84,16 @@ a:hover {
 .post:nth-of-type(2) {
     background-color: #006d77;
 } 
+
+/* Pseudo elements */
+h2::first-letter {
+    font-size: 30px;
+}
+
+.post p::first-line {
+    color: rgb(167, 40, 40);
+}
+
+.post p::selection {
+    background-color: #ef233c;
+}
