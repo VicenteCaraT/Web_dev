@@ -37,3 +37,18 @@ h1, h2 {
 footer a {
     color: darkorange;
 }
+
+/* Adjacent selector (+) */
+input + button {
+    background-color: pink;
+}
+
+h2 + button {
+    font-size: 20px;
+    background-color: burlywood;
+}
+
+/* direct child selector (>) */
+footer > a {
+    color: darkturquoise;
+}
