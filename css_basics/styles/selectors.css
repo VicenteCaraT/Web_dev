@@ -52,3 +52,16 @@ h2 + button {
 footer > a {
     color: darkturquoise;
 }
+
+/* Atribute selector */
+input[type="password"] {
+    color: greenyellow;
+}
+
+section[class="post"] {
+    background-color: rgb(60, 73, 73);
+}
+
+a[href*="google"] {
+    color: magenta;
+}
