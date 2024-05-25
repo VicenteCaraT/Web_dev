@@ -15,6 +15,10 @@ h1 {
     margin: 0;
 }
 
+span {
+    margin-left: 20px;
+}
+
 #one {
     background-color: #264653;
     border-width: 5px;
